@@ -1,0 +1,10 @@
+@import 'normalize.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$primary: #e52125;
+.container-box {
+    max-width: 1050px;
+    margin: 0 auto;
+}
