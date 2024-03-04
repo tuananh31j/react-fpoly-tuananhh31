@@ -18,7 +18,7 @@ const Home = () => {
                     <CardBlog flex img={Images.card2} />
                 </div>
                 <button className='border-transparent rounded-md float-right my-4 bg-purple-600 text-white flex items-center gap-2 p-3'>
-                    See more <img src='/public/Vector.svg' alt='' />
+                    See more <img src={Images.vector} alt='' />
                 </button>
             </div>
         </div>
