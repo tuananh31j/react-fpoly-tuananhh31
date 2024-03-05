@@ -18,7 +18,7 @@ const DetailsBlog = () => {
         return () => window.removeEventListener('scroll', handleScrollHeigh);
     }, [scrollHeigh]);
     return (
-        <div className='container-box'>
+        <div className='max-w-[580px] mx-auto lg:max-w-[1050px]'>
             <Banner img={Images.card} />
             <div>
                 <div className='my-10 border-b-2 border-gray-200 pb-10'>
@@ -72,10 +72,10 @@ const DetailsBlog = () => {
                 <SectionBlog />
             </div>
             {scrollHeigh > 900 && (
-                <button onClick={handleScrollBack} className='fixed top-[70vh] right-14 '>
+                <button onClick={handleScrollBack} className='fixed lg:top-[70vh] lg:right-14  top-[88vh] right-2'>
                     <FontAwesomeIcon
                         icon={faArrowUp}
-                        className='bg-purple-600 text-white w-8 p-4 h-8 box-content border-transparent rounded-full'
+                        className='bg-purple-600 text-white lg:w-8 lg:p-4 lg:h-8 w-6 h-6 p-2  box-content border-transparent rounded-full'
                     />
                 </button>
             )}

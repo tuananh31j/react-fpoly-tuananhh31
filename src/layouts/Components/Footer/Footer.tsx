@@ -3,8 +3,8 @@ import Images from '~/assets';
 const Footer = () => {
     return (
         <div className='border-t-2 my-4 border-gray-200 mt-20'>
-            <div className='container-box flex justify-between  py-10'>
-                <div className='flex gap-2 w-full items-center '>
+            <div className='lg:max-w-[1050px] mx-auto max-w-[580px] flex justify-between  py-10'>
+                <div className='lg:flex leading-8 lg:gap-2 lg:w-full items-center '>
                     <img src={Images.logo} alt='' />{' '}
                     <span className='font-normal text-sm'> 2020 copyright all rights reserved</span>
                 </div>
