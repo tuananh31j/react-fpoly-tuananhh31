@@ -37,6 +37,9 @@ const Header = () => {
                 <div>
                     <Link to='/'>Articles</Link>
                 </div>
+                <div>
+                    <Link to='/admin'>Admin</Link>
+                </div>
             </div>
         </div>
     );

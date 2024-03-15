@@ -1,8 +1,14 @@
 import { useRoutes } from 'react-router-dom';
-import PublicRouter from './routes';
+import PublicRouter, { PrivateRouter } from './routes';
+import { ToastContainer } from 'react-toastify';
 function App() {
-    const publicRouter = useRoutes(PublicRouter);
-    return <>{publicRouter}</>;
+    const router = useRoutes([...PublicRouter, ...PrivateRouter]);
+    return (
+        <>
+            {router}
+            <ToastContainer />
+        </>
+    );
 }
 
 export default App;

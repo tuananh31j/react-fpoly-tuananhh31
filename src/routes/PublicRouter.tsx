@@ -1,11 +1,11 @@
 import MainLayout from '~/layouts/MainLayout';
-import DetailsBlog from '~/pages/DetailsBlog';
-import Home from '~/pages/Home';
+import DetailsBlog from '~/pages/Clients/DetailsBlog';
+import Home from '~/pages/Clients/Home';
 import NotFound from '~/pages/NotFound';
 
 const PublicRouter = [
     {
-        path: '/',
+        path: '',
         element: <MainLayout />,
         children: [
             { index: true, element: <Home /> },

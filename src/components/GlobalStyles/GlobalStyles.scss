@@ -3,6 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
+input,
+textarea:focus {
+    outline: none;
+}
+@import 'react-toastify/dist/ReactToastify.css';
 $primary: #e52125;
 // .container-box {
 //     max-width: 1050px;
